@@ -42,11 +42,13 @@
 ---
 ## LeetCode Stats
 
-<!-- <p align="center"> <a href="https://leetcode.com/zaheen-siddiqui/"> <img src="https://leetcard.jacoblin.cool/zaheen-siddiqui?theme=dark&font=Baloo&ext=activity" alt="LeetCode Activity" /> </a> </p>
+<p align="center">
+  <a href="https://leetcode.com/u/Zaheen-Siddiqui/">
+    <img src="./leetcode-dashboard/data/dashboard.svg" alt="Zaheen Siddiqui LeetCode dashboard">
+  </a>
+</p>
 
-<p align="center"> <img src="https://leetcard.jacoblin.cool/zaheen-siddiqui?theme=dark&font=Baloo&ext=contest" alt="LeetCode Contest Stats" /> </p>
-
-<p align="center"> <img src="https://leetcard.jacoblin.cool/zaheen-siddiqui?theme=dark&font=Baloo&ext=heatmap" alt="LeetCode Submission Heatmap" /> </p> -->
+The dashboard above is refreshed automatically each day (or manually from **Actions → Refresh LeetCode dashboard**) using LeetCode's public GraphQL fields. The profile username is stored in the repository's `LEETCODE_USERNAME` Actions secret.
 ---
 <!--
 **Zaheen-Siddiqui/Zaheen-Siddiqui** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

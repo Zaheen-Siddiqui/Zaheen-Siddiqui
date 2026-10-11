@@ -1,0 +1,363 @@
+{
+  "username": "Zaheen-Siddiqui",
+  "fetchedAt": "2026-10-11T13:48:49.890163+00:00",
+  "profile": {
+    "matchedUser": {
+      "username": "zaheen-siddiqui",
+      "profile": {
+        "realName": "Zaheen Siddiqui",
+        "userAvatar": "https://assets.leetcode.com/users/zaheen-siddiqui/avatar_1754576004.png",
+        "ranking": 1418768,
+        "reputation": 0,
+        "starRating": 1.5,
+        "aboutMe": ""
+      },
+      "submitStatsGlobal": {
+        "acSubmissionNum": [
+          {
+            "difficulty": "All",
+            "count": 123,
+            "submissions": 153
+          },
+          {
+            "difficulty": "Easy",
+            "count": 47,
+            "submissions": 64
+          },
+          {
+            "difficulty": "Medium",
+            "count": 64,
+            "submissions": 73
+          },
+          {
+            "difficulty": "Hard",
+            "count": 12,
+            "submissions": 16
+          }
+        ],
+        "totalSubmissionNum": [
+          {
+            "difficulty": "All",
+            "count": 123,
+            "submissions": 210
+          },
+          {
+            "difficulty": "Easy",
+            "count": 47,
+            "submissions": 80
+          },
+          {
+            "difficulty": "Medium",
+            "count": 64,
+            "submissions": 106
+          },
+          {
+            "difficulty": "Hard",
+            "count": 12,
+            "submissions": 24
+          }
+        ]
+      },
+      "submissionCalendar": "{\"1771286400\": 3, \"1774483200\": 1, \"1774915200\": 2, \"1776384000\": 8, \"1777680000\": 7, \"1777852800\": 2, \"1783728000\": 15, \"1783814400\": 9, \"1783900800\": 4, \"1783987200\": 5, \"1784160000\": 8, \"1784246400\": 12, \"1784505600\": 12, \"1784592000\": 23, \"1784678400\": 3, \"1785196800\": 6, \"1785283200\": 12, \"1785369600\": 32, \"1785456000\": 1, \"1785542400\": 1, \"1785628800\": 2, \"1785715200\": 1, \"1785801600\": 2, \"1785888000\": 1, \"1785974400\": 1, \"1786060800\": 2, \"1786147200\": 1, \"1786233600\": 1, \"1786320000\": 4, \"1786406400\": 1, \"1786492800\": 1, \"1786579200\": 1, \"1786665600\": 5, \"1786752000\": 1, \"1786838400\": 1, \"1786924800\": 2, \"1787011200\": 1, \"1787097600\": 2, \"1787184000\": 1, \"1787270400\": 1, \"1787356800\": 1, \"1787443200\": 1, \"1787529600\": 1, \"1787616000\": 1, \"1787788800\": 2, \"1787961600\": 2, \"1788048000\": 1, \"1788134400\": 1, \"1791504000\": 2}",
+      "contributions": {
+        "points": 293
+      },
+      "badges": [
+        {
+          "id": "10727403",
+          "displayName": "Aug LeetCoding Challenge",
+          "icon": "/static/images/badges/dcc-2026-8.png",
+          "creationDate": "2026-08-31"
+        }
+      ],
+      "tagProblemCounts": {
+        "advanced": [
+          {
+            "tagName": "Game Theory",
+            "problemsSolved": 9
+          },
+          {
+            "tagName": "Backtracking",
+            "problemsSolved": 4
+          },
+          {
+            "tagName": "Quickselect",
+            "problemsSolved": 1
+          },
+          {
+            "tagName": "Dynamic Programming",
+            "problemsSolved": 18
+          },
+          {
+            "tagName": "Divide and Conquer",
+            "problemsSolved": 5
+          },
+          {
+            "tagName": "Trie",
+            "problemsSolved": 1
+          },
+          {
+            "tagName": "Union-Find",
+            "problemsSolved": 1
+          },
+          {
+            "tagName": "Segment Tree",
+            "problemsSolved": 1
+          },
+          {
+            "tagName": "Monotonic Stack",
+            "problemsSolved": 1
+          }
+        ],
+        "intermediate": [
+          {
+            "tagName": "Tree",
+            "problemsSolved": 22
+          },
+          {
+            "tagName": "Binary Tree",
+            "problemsSolved": 21
+          },
+          {
+            "tagName": "Hash Table",
+            "problemsSolved": 22
+          },
+          {
+            "tagName": "Ordered Set",
+            "problemsSolved": 1
+          },
+          {
+            "tagName": "Graph Theory",
+            "problemsSolved": 1
+          },
+          {
+            "tagName": "Greedy",
+            "problemsSolved": 8
+          },
+          {
+            "tagName": "Binary Search",
+            "problemsSolved": 9
+          },
+          {
+            "tagName": "Depth-First Search",
+            "problemsSolved": 18
+          },
+          {
+            "tagName": "Breadth-First Search",
+            "problemsSolved": 10
+          },
+          {
+            "tagName": "Recursion",
+            "problemsSolved": 8
+          },
+          {
+            "tagName": "Sliding Window",
+            "problemsSolved": 4
+          },
+          {
+            "tagName": "Bit Manipulation",
+            "problemsSolved": 5
+          },
+          {
+            "tagName": "Math",
+            "problemsSolved": 22
+          },
+          {
+            "tagName": "Design",
+            "problemsSolved": 2
+          }
+        ],
+        "fundamental": [
+          {
+            "tagName": "Array",
+            "problemsSolved": 60
+          },
+          {
+            "tagName": "Matrix",
+            "problemsSolved": 5
+          },
+          {
+            "tagName": "String",
+            "problemsSolved": 20
+          },
+          {
+            "tagName": "Simulation",
+            "problemsSolved": 3
+          },
+          {
+            "tagName": "Enumeration",
+            "problemsSolved": 3
+          },
+          {
+            "tagName": "Sorting",
+            "problemsSolved": 14
+          },
+          {
+            "tagName": "Stack",
+            "problemsSolved": 9
+          },
+          {
+            "tagName": "Queue",
+            "problemsSolved": 2
+          },
+          {
+            "tagName": "Linked List",
+            "problemsSolved": 15
+          },
+          {
+            "tagName": "Two Pointers",
+            "problemsSolved": 26
+          }
+        ]
+      }
+    }
+  },
+  "recent": {
+    "recentAcSubmissionList": [
+      {
+        "id": "2167236287",
+        "title": "Maximum Depth of N-ary Tree",
+        "titleSlug": "maximum-depth-of-n-ary-tree",
+        "timestamp": "1791545222",
+        "lang": "java"
+      },
+      {
+        "id": "2167232558",
+        "title": "Maximum Depth of Binary Tree",
+        "titleSlug": "maximum-depth-of-binary-tree",
+        "timestamp": "1791544863",
+        "lang": "java"
+      },
+      {
+        "id": "2125967671",
+        "title": "Find the Minimum and Maximum Number of Nodes Between Critical Points",
+        "titleSlug": "find-the-minimum-and-maximum-number-of-nodes-between-critical-points",
+        "timestamp": "1788171123",
+        "lang": "java"
+      },
+      {
+        "id": "2124771363",
+        "title": "Removing Minimum and Maximum From Array",
+        "titleSlug": "removing-minimum-and-maximum-from-array",
+        "timestamp": "1788074806",
+        "lang": "java"
+      },
+      {
+        "id": "2123511843",
+        "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
+        "titleSlug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+        "timestamp": "1787983543",
+        "lang": "java"
+      },
+      {
+        "id": "2123510478",
+        "title": "Make Lexicographically Smallest Array by Swapping Elements",
+        "titleSlug": "make-lexicographically-smallest-array-by-swapping-elements",
+        "timestamp": "1787983449",
+        "lang": "java"
+      },
+      {
+        "id": "2122006747",
+        "title": "Shortest and Lexicographically Smallest Beautiful String",
+        "titleSlug": "shortest-and-lexicographically-smallest-beautiful-string",
+        "timestamp": "1787841879",
+        "lang": "java"
+      },
+      {
+        "id": "2122006039",
+        "title": "Lexicographically Smallest Permutation Greater Than Target",
+        "titleSlug": "lexicographically-smallest-permutation-greater-than-target",
+        "timestamp": "1787841835",
+        "lang": "java"
+      },
+      {
+        "id": "2119516904",
+        "title": "Smallest Missing Multiple of K",
+        "titleSlug": "smallest-missing-multiple-of-k",
+        "timestamp": "1787653148",
+        "lang": "java"
+      },
+      {
+        "id": "2118251079",
+        "title": "Stone Game VIII",
+        "titleSlug": "stone-game-viii",
+        "timestamp": "1787563639",
+        "lang": "java"
+      },
+      {
+        "id": "2117100092",
+        "title": "Sum Game",
+        "titleSlug": "sum-game",
+        "timestamp": "1787472469",
+        "lang": "java"
+      },
+      {
+        "id": "2115918998",
+        "title": "Check Divisibility by Digit Sum and Product",
+        "titleSlug": "check-divisibility-by-digit-sum-and-product",
+        "timestamp": "1787388299",
+        "lang": "java"
+      },
+      {
+        "id": "2114893193",
+        "title": "Kth Smallest Amount With Single Denomination Combination",
+        "titleSlug": "kth-smallest-amount-with-single-denomination-combination",
+        "timestamp": "1787304901",
+        "lang": "java"
+      },
+      {
+        "id": "2113384469",
+        "title": "Distribute Elements Into Two Arrays I",
+        "titleSlug": "distribute-elements-into-two-arrays-i",
+        "timestamp": "1787196366",
+        "lang": "java"
+      },
+      {
+        "id": "2112210239",
+        "title": "Cinema Seat Allocation",
+        "titleSlug": "cinema-seat-allocation",
+        "timestamp": "1787114699",
+        "lang": "java"
+      },
+      {
+        "id": "2111147099",
+        "title": "Find the Largest Almost Missing Integer",
+        "titleSlug": "find-the-largest-almost-missing-integer",
+        "timestamp": "1787041718",
+        "lang": "java"
+      },
+      {
+        "id": "2110014477",
+        "title": "Stone Game V",
+        "titleSlug": "stone-game-v",
+        "timestamp": "1786962950",
+        "lang": "java"
+      },
+      {
+        "id": "2108654639",
+        "title": "Stone Game IX",
+        "titleSlug": "stone-game-ix",
+        "timestamp": "1786863001",
+        "lang": "java"
+      },
+      {
+        "id": "2107492720",
+        "title": "Longest Subsequence With Non-Zero Bitwise XOR",
+        "titleSlug": "longest-subsequence-with-non-zero-bitwise-xor",
+        "timestamp": "1786787672",
+        "lang": "java"
+      },
+      {
+        "id": "2106371350",
+        "title": "Letter Combinations of a Phone Number",
+        "titleSlug": "letter-combinations-of-a-phone-number",
+        "timestamp": "1786696017",
+        "lang": "java"
+      }
+    ]
+  },
+  "contest": {
+    "userContestRanking": null,
+    "userContestRankingHistory": []
+  }
+}
