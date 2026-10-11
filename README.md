@@ -40,16 +40,7 @@
 <img src="https://skillicons.dev/icons?i=autocad,unreal,md&theme=dark" /> <br/> 
 
 ---
-## LeetCode Stats
 
-<p align="center">
-  <a href="https://leetcode.com/u/Zaheen-Siddiqui/">
-    <img src="./leetcode-dashboard/data/dashboard.svg" alt="Zaheen Siddiqui LeetCode dashboard">
-  </a>
-</p>
-
-The dashboard above is refreshed automatically each day (or manually from **Actions → Refresh LeetCode dashboard**) using LeetCode's public GraphQL fields. The profile username is stored in the repository's `LEETCODE_USERNAME` Actions secret.
----
 <!--
 **Zaheen-Siddiqui/Zaheen-Siddiqui** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
