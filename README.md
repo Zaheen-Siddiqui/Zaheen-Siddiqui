@@ -25,11 +25,14 @@
 
 ### Cloud, DevOps & Infrastructure
 
-<img src="https://skillicons.dev/icons?i=aws,docker,jenkins,kubernetes,terraform,nginx,vercel,githubactions&theme=dark" /> <img src="assets/gunicorn.png" width="48" height="48" style="object-fit: contain;border-radius: 10px; margin-left: 5px; " /><br/> 
+<img src="https://skillicons.dev/icons?i=aws,docker,jenkins,kubernetes,terraform,nginx,vercel,githubactions&theme=dark" /> <img src="assets/gunicorn.png" width="48" height="48" style="object-fit: contain;border-radius: 10px; margin-left: 5px; " /><img src="assets/render.png" width="48" height="48" style="object-fit: contain;border-radius: 10px; margin-left: 5px; " />
+<br/> 
 
 ### Developer Tools & Build Systems
 
-<img src="https://skillicons.dev/icons?i=git,github,vscode,visualstudio,idea,gradle&theme=dark" /> <br/> 
+<img src="https://skillicons.dev/icons?i=git,github,vscode,visualstudio,idea,gradle&theme=dark" /> 
+<img src="assets/jupyter.png" width="48" height="48" style="object-fit: contain;border-radius: 10px; margin-left: 5px; " />
+<br/> 
 
 ### Operating Systems
 
@@ -40,7 +43,6 @@
 <img src="https://skillicons.dev/icons?i=autocad,unreal,md&theme=dark" /> <br/> 
 
 ---
-
 <!--
 **Zaheen-Siddiqui/Zaheen-Siddiqui** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
