@@ -17,7 +17,7 @@
 
 ### Databases
 
-<img src="https://skillicons.dev/icons?i=postgres,mongodb&theme=dark" /> 
+<img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb&theme=dark" /> 
 
 ### Mobile & Desktop Development
 
@@ -25,7 +25,7 @@
 
 ### Cloud, DevOps & Infrastructure
 
-<img src="https://skillicons.dev/icons?i=aws,docker,jenkins,kubernetes,terraform,nginx,vercel,githubactions&theme=dark" /> <br/> 
+<img src="https://skillicons.dev/icons?i=aws,docker,jenkins,kubernetes,terraform,nginx,vercel,githubactions&theme=dark" /> <img src="assets/gunicorn.png" width="48" height="48" style="object-fit: contain;border-radius: 10px; margin-left: 5px; " /><br/> 
 
 ### Developer Tools & Build Systems
 
