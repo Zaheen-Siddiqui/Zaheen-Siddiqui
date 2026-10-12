@@ -54,6 +54,13 @@ Of course, I'm not asking you to be a hero. The world doesn't have that many opp
 <p align="center">
   <img src="./assets/github-analytics.svg" alt="GitHub Analytics" width="100%" />
 </p>
+
+| Metric | Value | Metric | Value |
+|:--|--:|:--|--:|
+| Contributions (12 months) | `675` | Public + private repositories | `10` |
+| Starred repositories | `6` | Forks | `3` |
+| Pull requests authored | `82` | Longest streak | `11 days` |
+
 <!-- GITHUB_ANALYTICS:END -->
 
 <!--
