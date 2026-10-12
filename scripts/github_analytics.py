@@ -238,24 +238,6 @@ def build_svg(stats):
 </svg>
 """
 
-
-def build_section(stats):
-    return f"""## GitHub Analytics
-
-{START_MARKER}
-<p align="center">
-  <img src="./assets/github-analytics.svg" alt="GitHub Analytics" width="100%" />
-</p>
-
-| Metric | Value | Metric | Value |
-|:--|--:|:--|--:|
-| Contributions (12 months) | `{stats["contributions"]:,}` | Public + private repositories | `{stats["repositories"]}` |
-| Starred repositories | `{stats["starred_repositories"]:,}` | Forks | `{stats["forks"]:,}` |
-| Pull requests authored | `{stats["pull_requests"]:,}` | Longest streak | `{stats["longest_streak"]} days` |
-
-{END_MARKER}"""
-
-
 def update_readme(section):
     with open(README_PATH, "r", encoding="utf-8") as file:
         readme = file.read()
