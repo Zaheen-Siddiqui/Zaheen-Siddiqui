@@ -238,6 +238,18 @@ def build_svg(stats):
 </svg>
 """
 
+
+def build_section(stats):
+    return f"""## GitHub Analytics
+
+{START_MARKER}
+<p align="center">
+  <img src="./assets/github-analytics.svg" alt="GitHub Analytics" width="100%" />
+</p>
+
+{END_MARKER}"""
+
+
 def update_readme(section):
     with open(README_PATH, "r", encoding="utf-8") as file:
         readme = file.read()
