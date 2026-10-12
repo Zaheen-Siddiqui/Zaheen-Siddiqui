@@ -11,20 +11,20 @@ permissions:
 
 jobs:
   update-analytics:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Generate analytics
         env:
-          ANALYTICS_TOKEN: ${{ secrets.ANALYTICS_TOKEN }}
+          ANALYTICS_TOKEN: ${{ secrets.ANALYTICS_TOKEN || github.token }}
         run: python scripts/github_analytics.py
 
       - name: Commit updated analytics
