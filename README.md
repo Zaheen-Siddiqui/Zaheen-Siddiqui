@@ -55,11 +55,16 @@ Of course, I'm not asking you to be a hero. The world doesn't have that many opp
 </p>
 
 <!-- GITHUB_ANALYTICS:START -->
+<p align="center">
+  <img src="./assets/github-analytics.svg" alt="GitHub Analytics" width="100%" />
+</p>
+
 | Metric | Value | Metric | Value |
 |:--|--:|:--|--:|
-| Contributions (12 months) | `Updating...` | Public repositories | `Updating...` |
-| Stars earned | `Updating...` | Forks | `Updating...` |
-| Pull requests authored | `Updating...` | Longest streak | `Updating...` |
+| Contributions (12 months) | `673` | Public repositories | `10` |
+| Stars earned | `0` | Forks | `3` |
+| Pull requests authored | `82` | Longest streak | `11 days` |
+
 <!-- GITHUB_ANALYTICS:END -->
 
 <!--
