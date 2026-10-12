@@ -29,12 +29,15 @@
   <text x="24" y="144" class="sub">Past 12 months</text>
   <text x="424" y="87" class="label">Repositories</text>
   <text x="424" y="124" class="value">21</text>
-  <text x="424" y="144" class="sub">Public + private projects</text>
   <text x="24" y="205" class="label">Starred repositories</text>
   <text x="24" y="242" class="value">6</text>
   <text x="424" y="205" class="label">Forked repositories</text>
-  <text x="424" y="242" class="value">4</text>
+  <text x="424" y="242" class="value">5</text>
   <path d="M0 296.5H800M0 359.5H800M0 420.5H800" class="border"/>
+  <text x="24" y="335" class="small-value">Pull requests</text>
+  <text x="776" y="335" text-anchor="end" class="small-value">82</text>
+  <text x="24" y="398" class="small-value">Longest contribution streak</text>
+  <text x="776" y="398" text-anchor="end" class="small-value">11 days</text>
   <text x="24" y="450" class="small-value">Languages</text>
   <text x="776" y="450" text-anchor="end" class="sub">Repository code by bytes</text>
   <clipPath id="language-bar"><rect x="24" y="466" width="752" height="18" rx="9"/></clipPath>

@@ -221,12 +221,15 @@ def build_svg(stats):
   <text x="24" y="144" class="sub">Past 12 months</text>
   <text x="424" y="87" class="label">Repositories</text>
   <text x="424" y="124" class="value">{stats["repositories"]}</text>
-  <text x="424" y="144" class="sub">Public + private projects</text>
   <text x="24" y="205" class="label">Starred repositories</text>
   <text x="24" y="242" class="value">{stats["starred_repositories"]:,}</text>
   <text x="424" y="205" class="label">Forked repositories</text>
   <text x="424" y="242" class="value">{stats["forks"]:,}</text>
   <path d="M0 296.5H800M0 359.5H800M0 420.5H800" class="border"/>
+  <text x="24" y="335" class="small-value">Pull requests</text>
+  <text x="776" y="335" text-anchor="end" class="small-value">{stats["pull_requests"]:,}</text>
+  <text x="24" y="398" class="small-value">Longest contribution streak</text>
+  <text x="776" y="398" text-anchor="end" class="small-value">{stats["longest_streak"]} days</text>
   <text x="24" y="450" class="small-value">Languages</text>
   <text x="776" y="450" text-anchor="end" class="sub">Repository code by bytes</text>
   <clipPath id="language-bar"><rect x="{bar_x}" y="{bar_y}" width="{bar_width}" height="{bar_height}" rx="9"/></clipPath>
