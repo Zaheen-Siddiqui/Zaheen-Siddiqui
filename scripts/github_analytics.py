@@ -66,9 +66,7 @@ def get_repositories():
         batch = request_json(url)
         if not batch:
             break
-        repositories.extend(
-            repo for repo in batch if not repo["fork"]
-        )
+        repositories.extend(batch)
         if len(batch) < 100:
             break
         page += 1
@@ -226,15 +224,9 @@ def build_svg(stats):
   <text x="424" y="144" class="sub">Public + private projects</text>
   <text x="24" y="205" class="label">Starred repositories</text>
   <text x="24" y="242" class="value">{stats["starred_repositories"]:,}</text>
-  <text x="424" y="205" class="label">Forks</text>
+  <text x="424" y="205" class="label">Forked repositories</text>
   <text x="424" y="242" class="value">{stats["forks"]:,}</text>
   <path d="M0 296.5H800M0 359.5H800M0 420.5H800" class="border"/>
-  <text x="24" y="324" class="small-value">Pull requests</text>
-  <text x="24" y="343" class="sub">Public + private PRs created</text>
-  <text x="776" y="335" text-anchor="end" class="small-value">{stats["pull_requests"]:,}</text>
-  <text x="24" y="387" class="small-value">Longest contribution streak</text>
-  <text x="24" y="406" class="sub">Public + private contributions</text>
-  <text x="776" y="398" text-anchor="end" class="small-value">{stats["longest_streak"]} days</text>
   <text x="24" y="450" class="small-value">Languages</text>
   <text x="776" y="450" text-anchor="end" class="sub">Repository code by bytes</text>
   <clipPath id="language-bar"><rect x="{bar_x}" y="{bar_y}" width="{bar_width}" height="{bar_height}" rx="9"/></clipPath>
@@ -284,7 +276,7 @@ if __name__ == "__main__":
             "contributions": contributions,
             "longest_streak": longest_streak,
             "starred_repositories": get_starred_repository_count(),
-            "forks": sum(repo["forks_count"] for repo in repositories),
+            "forks": sum(repo["fork"] for repo in repositories),
             "repositories": len(repositories),
             "pull_requests": get_authored_pr_count(),
             "languages": get_languages(repositories),
