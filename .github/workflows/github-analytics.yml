@@ -24,8 +24,13 @@ jobs:
 
       - name: Generate analytics
         env:
-          ANALYTICS_TOKEN: ${{ secrets.ANALYTICS_TOKEN || github.token }}
-        run: python scripts/github_analytics.py
+          ANALYTICS_TOKEN: ${{ secrets.ANALYTICS_TOKEN }}
+        run: |
+          if [ -z "$ANALYTICS_TOKEN" ]; then
+            echo "ANALYTICS_TOKEN is not configured; private repositories cannot be included."
+            exit 1
+          fi
+          python scripts/github_analytics.py
 
       - name: Commit updated analytics
         run: |

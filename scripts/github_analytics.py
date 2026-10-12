@@ -41,10 +41,15 @@ def request_json(url, token=TOKEN, payload=None):
 def has_account_token():
     global _authenticated_login
     if _authenticated_login is None:
-        _authenticated_login = (
-            request_json(f"{API}/user")["login"] if TOKEN else ""
-        )
-    return _authenticated_login.casefold() == USERNAME.casefold()
+        if not TOKEN:
+            return False
+        _authenticated_login = request_json(f"{API}/user")["login"]
+        if _authenticated_login.casefold() != USERNAME.casefold():
+            raise RuntimeError(
+                "ANALYTICS_TOKEN authenticates as "
+                f"{_authenticated_login}, expected {USERNAME}"
+            )
+    return bool(_authenticated_login)
 
 
 def get_repositories():
