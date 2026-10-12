@@ -54,6 +54,7 @@ Of course, I'm not asking you to be a hero. The world doesn't have that many opp
 <p align="center">
   <img src="./assets/github-analytics.svg" alt="GitHub Analytics" width="100%" />
 </p>
+
 <!-- GITHUB_ANALYTICS:END -->
 
 <!--
