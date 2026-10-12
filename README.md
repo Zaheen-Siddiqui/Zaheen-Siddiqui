@@ -54,19 +54,6 @@ Of course, I'm not asking you to be a hero. The world doesn't have that many opp
   <img src="./assets/github-analytics.svg" alt="GitHub Analytics" width="100%" />
 </p>
 
-<!-- GITHUB_ANALYTICS:START -->
-<p align="center">
-  <img src="./assets/github-analytics.svg" alt="GitHub Analytics" width="100%" />
-</p>
-
-| Metric | Value | Metric | Value |
-|:--|--:|:--|--:|
-| Contributions (12 months) | `673` | Public repositories | `10` |
-| Stars earned | `0` | Forks | `3` |
-| Pull requests authored | `82` | Longest streak | `11 days` |
-
-<!-- GITHUB_ANALYTICS:END -->
-
 <!--
 **Zaheen-Siddiqui/Zaheen-Siddiqui** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
