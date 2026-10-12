@@ -4,6 +4,8 @@ Millions of people within a nation are always necessary for one genius to come i
 
 Of course, I'm not asking you to be a hero. The world doesn't have that many opportunities to set a stage for heroes. You're a human and only part of humanity. You should know there are limits to what you can do. Don't overestimate or underestimate yourself. Just fulfill your destiny when the time comes. You don't need to shine brilliantly for eternity like a star. You only need to follow your will as best as you can and stick to your belief. Your existence will become the light that illuminates your path, and no matter how dark the night is, it can never hide the glow of a lamp. That would be your light and yours alone.
 
+---
+
 ## My Toolkit 
 
 ### Languages
@@ -45,6 +47,21 @@ Of course, I'm not asking you to be a hero. The world doesn't have that many opp
 <img src="https://skillicons.dev/icons?i=autocad,unreal,md&theme=dark" /> <br/> 
 
 ---
+
+## GitHub Analytics
+
+<p align="center">
+  <img src="./assets/github-analytics.svg" alt="GitHub Analytics" width="100%" />
+</p>
+
+<!-- GITHUB_ANALYTICS:START -->
+| Metric | Value | Metric | Value |
+|:--|--:|:--|--:|
+| Contributions (12 months) | `Updating...` | Public repositories | `Updating...` |
+| Stars earned | `Updating...` | Forks | `Updating...` |
+| Pull requests authored | `Updating...` | Longest streak | `Updating...` |
+<!-- GITHUB_ANALYTICS:END -->
+
 <!--
 **Zaheen-Siddiqui/Zaheen-Siddiqui** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
