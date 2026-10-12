@@ -50,9 +50,11 @@ Of course, I'm not asking you to be a hero. The world doesn't have that many opp
 
 ## GitHub Analytics
 
+<!-- GITHUB_ANALYTICS:START -->
 <p align="center">
   <img src="./assets/github-analytics.svg" alt="GitHub Analytics" width="100%" />
 </p>
+<!-- GITHUB_ANALYTICS:END -->
 
 <!--
 **Zaheen-Siddiqui/Zaheen-Siddiqui** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

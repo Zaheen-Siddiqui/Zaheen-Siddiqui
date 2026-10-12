@@ -16,6 +16,7 @@ END_MARKER = "<!-- GITHUB_ANALYTICS:END -->"
 TOKEN = os.environ.get("ANALYTICS_TOKEN")
 API = "https://api.github.com"
 GRAPHQL = "https://api.github.com/graphql"
+_authenticated_login = None
 
 
 def request_json(url, token=TOKEN, payload=None):
@@ -37,21 +38,54 @@ def request_json(url, token=TOKEN, payload=None):
         return json.loads(response.read().decode("utf-8"))
 
 
+def has_account_token():
+    global _authenticated_login
+    if _authenticated_login is None:
+        _authenticated_login = (
+            request_json(f"{API}/user")["login"] if TOKEN else ""
+        )
+    return _authenticated_login.casefold() == USERNAME.casefold()
+
+
 def get_repositories():
     repositories = []
     page = 1
     while True:
-        url = f"{API}/users/{USERNAME}/repos?type=owner&per_page=100&page={page}"
+        if has_account_token():
+            url = (
+                f"{API}/user/repos?affiliation=owner&visibility=all"
+                f"&per_page=100&page={page}"
+            )
+        else:
+            url = f"{API}/users/{USERNAME}/repos?type=owner&per_page=100&page={page}"
         batch = request_json(url)
         if not batch:
             break
         repositories.extend(
-            repo for repo in batch if not repo["private"] and not repo["fork"]
+            repo for repo in batch if not repo["fork"]
         )
         if len(batch) < 100:
             break
         page += 1
     return repositories
+
+
+def get_starred_repository_count():
+    repositories = []
+    page = 1
+    while True:
+        if has_account_token():
+            url = f"{API}/user/starred?per_page=100&page={page}"
+        else:
+            url = f"{API}/users/{USERNAME}/starred?per_page=100&page={page}"
+        batch = request_json(url)
+        if not batch:
+            break
+        repositories.extend(batch)
+        if len(batch) < 100:
+            break
+        page += 1
+    return len(repositories)
 
 
 def get_contributions_and_streak():
@@ -125,7 +159,7 @@ def percentage(value, total):
 def build_svg(stats):
     languages = stats["languages"]
     total_bytes = sum(languages.values())
-    language_items = languages.most_common(6)
+    language_items = languages.most_common(7)
     if len(languages) > len(language_items):
         language_items.append(
             ("Other", total_bytes - sum(value for _, value in language_items))
@@ -184,17 +218,17 @@ def build_svg(stats):
   <text x="24" y="144" class="sub">Past 12 months</text>
   <text x="424" y="87" class="label">Repositories</text>
   <text x="424" y="124" class="value">{stats["repositories"]}</text>
-  <text x="424" y="144" class="sub">Public projects</text>
-  <text x="24" y="205" class="label">Stars earned</text>
-  <text x="24" y="242" class="value">{stats["stars"]:,}</text>
+  <text x="424" y="144" class="sub">Public + private projects</text>
+  <text x="24" y="205" class="label">Starred repositories</text>
+  <text x="24" y="242" class="value">{stats["starred_repositories"]:,}</text>
   <text x="424" y="205" class="label">Forks</text>
   <text x="424" y="242" class="value">{stats["forks"]:,}</text>
   <path d="M0 296.5H800M0 359.5H800M0 420.5H800" class="border"/>
   <text x="24" y="324" class="small-value">Pull requests</text>
-  <text x="24" y="343" class="sub">Total PRs created</text>
+  <text x="24" y="343" class="sub">Public + private PRs created</text>
   <text x="776" y="335" text-anchor="end" class="small-value">{stats["pull_requests"]:,}</text>
   <text x="24" y="387" class="small-value">Longest contribution streak</text>
-  <text x="24" y="406" class="sub">Consecutive active days</text>
+  <text x="24" y="406" class="sub">Public + private contributions</text>
   <text x="776" y="398" text-anchor="end" class="small-value">{stats["longest_streak"]} days</text>
   <text x="24" y="450" class="small-value">Languages</text>
   <text x="776" y="450" text-anchor="end" class="sub">Repository code by bytes</text>
@@ -215,8 +249,8 @@ def build_section(stats):
 
 | Metric | Value | Metric | Value |
 |:--|--:|:--|--:|
-| Contributions (12 months) | `{stats["contributions"]:,}` | Public repositories | `{stats["repositories"]}` |
-| Stars earned | `{stats["stars"]:,}` | Forks | `{stats["forks"]:,}` |
+| Contributions (12 months) | `{stats["contributions"]:,}` | Public + private repositories | `{stats["repositories"]}` |
+| Starred repositories | `{stats["starred_repositories"]:,}` | Forks | `{stats["forks"]:,}` |
 | Pull requests authored | `{stats["pull_requests"]:,}` | Longest streak | `{stats["longest_streak"]} days` |
 
 {END_MARKER}"""
@@ -250,7 +284,7 @@ if __name__ == "__main__":
         stats = {
             "contributions": contributions,
             "longest_streak": longest_streak,
-            "stars": sum(repo["stargazers_count"] for repo in repositories),
+            "starred_repositories": get_starred_repository_count(),
             "forks": sum(repo["forks_count"] for repo in repositories),
             "repositories": len(repositories),
             "pull_requests": get_authored_pr_count(),
