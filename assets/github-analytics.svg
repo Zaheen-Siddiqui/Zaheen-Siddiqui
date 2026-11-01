@@ -25,22 +25,22 @@
   <rect x="0.5" y="171.5" width="383" height="105" rx="8" class="border"/>
   <rect x="400.5" y="171.5" width="399" height="105" rx="8" class="border"/>
   <text x="24" y="87" class="label">Total contributions</text>
-  <text x="24" y="124" class="value">657</text>
+  <text x="24" y="124" class="value">690</text>
   <text x="24" y="144" class="sub">Past 12 months</text>
   <text x="424" y="87" class="label">Repositories</text>
-  <text x="424" y="124" class="value">22</text>
+  <text x="424" y="124" class="value">27</text>
   <text x="24" y="205" class="label">Starred repositories</text>
-  <text x="24" y="242" class="value">7</text>
+  <text x="24" y="242" class="value">8</text>
   <text x="424" y="205" class="label">Forked repositories</text>
-  <text x="424" y="242" class="value">4</text>
+  <text x="424" y="242" class="value">5</text>
   <path d="M0 296.5H800M0 359.5H800M0 420.5H800" class="border"/>
   <text x="24" y="335" class="small-value">Pull requests</text>
-  <text x="776" y="335" text-anchor="end" class="small-value">82</text>
+  <text x="776" y="335" text-anchor="end" class="small-value">86</text>
   <text x="24" y="398" class="small-value">Longest contribution streak</text>
   <text x="776" y="398" text-anchor="end" class="small-value">11 days</text>
   <text x="24" y="450" class="small-value">Languages</text>
   <text x="776" y="450" text-anchor="end" class="sub">Repository code by bytes</text>
   <clipPath id="language-bar"><rect x="24" y="466" width="752" height="18" rx="9"/></clipPath>
-  <g clip-path="url(#language-bar)"><rect x="24.00" y="466" width="262.13" height="18" fill="#2f81f7"/><rect x="286.13" y="466" width="189.18" height="18" fill="#bc8cff"/><rect x="475.30" y="466" width="135.10" height="18" fill="#f0883e"/><rect x="610.41" y="466" width="47.96" height="18" fill="#3fb950"/><rect x="658.37" y="466" width="30.08" height="18" fill="#db61a2"/><rect x="688.45" y="466" width="30.06" height="18" fill="#a371f7"/><rect x="718.51" y="466" width="16.87" height="18" fill="#8b949e"/><rect x="735.38" y="466" width="40.62" height="18" fill="#2f81f7"/></g>
-  <circle cx="24" cy="513" r="5" fill="#2f81f7"/><text x="38" y="518" class="language">TypeScript 34.86%</text><circle cx="400" cy="513" r="5" fill="#bc8cff"/><text x="414" y="518" class="language">JavaScript 25.16%</text><circle cx="24" cy="541" r="5" fill="#f0883e"/><text x="38" y="546" class="language">Python 17.97%</text><circle cx="400" cy="541" r="5" fill="#3fb950"/><text x="414" y="546" class="language">HTML 6.38%</text><circle cx="24" cy="569" r="5" fill="#db61a2"/><text x="38" y="574" class="language">PowerShell 4.00%</text><circle cx="400" cy="569" r="5" fill="#a371f7"/><text x="414" y="574" class="language">Java 4.00%</text><circle cx="24" cy="597" r="5" fill="#8b949e"/><text x="38" y="602" class="language">C 2.24%</text><circle cx="400" cy="597" r="5" fill="#2f81f7"/><text x="414" y="602" class="language">Other 5.40%</text>
+  <g clip-path="url(#language-bar)"><rect x="24.00" y="466" width="279.42" height="18" fill="#2f81f7"/><rect x="303.42" y="466" width="167.94" height="18" fill="#bc8cff"/><rect x="471.37" y="466" width="131.49" height="18" fill="#f0883e"/><rect x="602.86" y="466" width="42.61" height="18" fill="#3fb950"/><rect x="645.47" y="466" width="27.32" height="18" fill="#db61a2"/><rect x="672.79" y="466" width="26.68" height="18" fill="#a371f7"/><rect x="699.47" y="466" width="19.15" height="18" fill="#8b949e"/><rect x="718.62" y="466" width="57.38" height="18" fill="#2f81f7"/></g>
+  <circle cx="24" cy="513" r="5" fill="#2f81f7"/><text x="38" y="518" class="language">TypeScript 37.16%</text><circle cx="400" cy="513" r="5" fill="#bc8cff"/><text x="414" y="518" class="language">JavaScript 22.33%</text><circle cx="24" cy="541" r="5" fill="#f0883e"/><text x="38" y="546" class="language">Python 17.49%</text><circle cx="400" cy="541" r="5" fill="#3fb950"/><text x="414" y="546" class="language">HTML 5.67%</text><circle cx="24" cy="569" r="5" fill="#db61a2"/><text x="38" y="574" class="language">PowerShell 3.63%</text><circle cx="400" cy="569" r="5" fill="#a371f7"/><text x="414" y="574" class="language">Java 3.55%</text><circle cx="24" cy="597" r="5" fill="#8b949e"/><text x="38" y="602" class="language">TeX 2.55%</text><circle cx="400" cy="597" r="5" fill="#2f81f7"/><text x="414" y="602" class="language">Other 7.63%</text>
 </svg>
