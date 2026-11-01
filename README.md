@@ -1,4 +1,4 @@
-## A Quote
+## The Weight of a Moment
 
 Millions of people within a nation are always necessary for one genius to come into being. Millions of idle human hours must always pass before a truly historical, decisive moment in history makes its appearance. If such a critical moment occurs in the world, it's decisive for decades and centuries. When the strong personal will collided with the historical fate, the sparks flashed, and the moment forever shined in the sky of human civilization. Every such fleeting moment is a stage for heroes. 
 
