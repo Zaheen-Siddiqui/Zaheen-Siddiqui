@@ -250,7 +250,7 @@ def build_section(stats):
 {END_MARKER}"""
 
 
-def update_readme(section):
+def render_readme(section):
     with open(README_PATH, "r", encoding="utf-8") as file:
         readme = file.read()
     if START_MARKER not in readme or END_MARKER not in readme:
@@ -258,6 +258,11 @@ def update_readme(section):
     start = readme.index(START_MARKER)
     end = readme.index(END_MARKER) + len(END_MARKER)
     updated = readme[:start] + section.split("\n\n", 1)[1] + readme[end:]
+    return readme, updated
+
+
+def update_readme(section):
+    readme, updated = render_readme(section)
     if updated != readme:
         with open(README_PATH, "w", encoding="utf-8") as file:
             file.write(updated)
@@ -284,7 +289,18 @@ if __name__ == "__main__":
             "pull_requests": get_authored_pr_count(),
             "languages": get_languages(repositories),
         }
-        write_svg(build_svg(stats))
-        update_readme(build_section(stats))
+        svg = build_svg(stats)
+        section = build_section(stats)
+        with open(SVG_PATH, "r", encoding="utf-8") as file:
+            current_svg = file.read()
+        current_readme, updated_readme = render_readme(section)
+
+        if svg != current_svg or updated_readme != current_readme:
+            stats["contributions"] += 1
+            svg = build_svg(stats)
+            section = build_section(stats)
+
+        write_svg(svg)
+        update_readme(section)
     except (KeyError, TypeError, urllib.error.URLError, TimeoutError, RuntimeError) as error:
         raise SystemExit(f"Analytics update failed: {error}")
